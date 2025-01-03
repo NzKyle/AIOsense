@@ -31,6 +31,7 @@ api:
 
 rtttl:
   output: rtttl_out
+  gain: 15%
   on_finished_playback:
     - logger.log: 'Song ended!'
     - binary_sensor.template.publish:
