@@ -41,7 +41,7 @@ esphome:
   on_boot:
     - priority: 10
       then:
-        - rtttl.play: "two short:d=4,o=5,b=100:16e6,16e6"
+        #- rtttl.play: "two short:d=4,o=5,b=100:16e6,16e6"
         - binary_sensor.template.publish:
             id: rtttl_playing
             state: false
