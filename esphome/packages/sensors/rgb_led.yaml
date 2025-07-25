@@ -8,7 +8,7 @@ light:
     name: "LED"
     id: led
     chipset: WS2812
-    rgb_order: "${rgb_led_order}"
+    rgb_order: GRB
     num_leds: 1
     pin: "${rgb_led_pin}"
     icon: "mdi:led-outline"
