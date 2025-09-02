@@ -7,8 +7,8 @@ substitutions:
   rgb_led_pin: GPIO7
   rgb_led_type: GRB
   sen0395_io_pin: A2
-  uart_rx_pin: GPIO21
-  uart_tx_pin: GPIO20
+  #uart_rx_pin: GPIO21
+  #uart_tx_pin: GPIO20
 
 esphome:
  platformio_options:
@@ -18,14 +18,14 @@ esp32:
   board: lolin_c3_mini
   framework:
     type: esp-idf
-    #version: 5.4.2
+    version: 5.4.1
     
-uart:
-  tx_pin: "${uart_tx_pin}"
-  rx_pin: "${uart_rx_pin}"
-  baud_rate: 256000
-  parity: NONE
-  stop_bits: 1
+#uart:
+#  tx_pin: "${uart_tx_pin}"
+#  rx_pin: "${uart_rx_pin}"
+#  baud_rate: 256000
+#  parity: NONE
+#  stop_bits: 1
     
 wifi:
   output_power: 8.5dBm
