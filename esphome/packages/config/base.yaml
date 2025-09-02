@@ -14,9 +14,6 @@ logger:
 
 captive_portal:
 
-uart:
-  debug:
-
 i2c:
   scan: true
 
