@@ -20,6 +20,13 @@ esp32:
     type: esp-idf
     #version: 5.4.2
     
+uart:
+  tx_pin: "${uart_tx_pin}"
+  rx_pin: "${uart_rx_pin}"
+  baud_rate: 256000
+  parity: NONE
+  stop_bits: 1
+    
 wifi:
   output_power: 8.5dBm
 
