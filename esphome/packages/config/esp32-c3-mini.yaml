@@ -10,9 +10,9 @@ substitutions:
   #uart_rx_pin: GPIO21
   #uart_tx_pin: GPIO20
 
-#external_components:
-#  - source: github://esphome/esphome@2025.8.1
-#    components: [i2c]
+external_components:
+  - source: github://esphome/esphome@2025.8.1
+    components: [i2c]
 
 esphome:
  platformio_options:
