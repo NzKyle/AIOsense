@@ -10,7 +10,9 @@ substitutions:
   uart_rx_pin: GPIO20
   uart_tx_pin: GPIO21
 
-#external_components:
+external_components:
+  - source: github://esphome/esphome@2025.10.5
+    components: [ld2410]
 #  - source: github://esphome/esphome@2025.8.1
 #    components: [i2c]
 
@@ -22,7 +24,7 @@ esp32:
   board: lolin_c3_mini
   framework:
     type: esp-idf
-    #version: 5.4.1
+    version: 5.4.2
     
     
 #uart:
