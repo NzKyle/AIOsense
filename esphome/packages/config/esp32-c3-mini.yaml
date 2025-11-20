@@ -7,12 +7,12 @@ substitutions:
   rgb_led_pin: GPIO7
   rgb_led_type: GRB
   sen0395_io_pin: A2
-  uart_rx_pin: GPIO20
-  uart_tx_pin: GPIO21
+  #uart_rx_pin: GPIO20
+  #uart_tx_pin: GPIO21
 
 external_components:
-  - source: github://esphome/esphome@2025.10.5
-    components: [ld2410]
+#  - source: github://esphome/esphome@2025.10.5
+#    components: [ld2410]
 #  - source: github://esphome/esphome@2025.8.1
 #    components: [i2c]
 
@@ -23,7 +23,7 @@ esphome:
 esp32:
   board: lolin_c3_mini
   framework:
-    type: esp-idf
+    type: arduino
     #version: 5.4.2
     
     
