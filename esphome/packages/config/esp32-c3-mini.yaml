@@ -11,8 +11,8 @@ substitutions:
   #uart_tx_pin: GPIO21
 
 external_components:
-  - source: github://esphome/esphome@2025.10.5
-    components: [uart]
+#  - source: github://esphome/esphome@2025.10.5
+#    components: [uart]
 #  - source: github://esphome/esphome@2025.8.1
 #    components: [i2c]
 
