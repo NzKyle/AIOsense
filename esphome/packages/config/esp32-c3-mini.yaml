@@ -17,6 +17,12 @@ external_components:
 #    components: [i2c]
 
 esphome:
+ on_boot:
+  - priority: 1001
+    then:
+      - lambda: |-
+         gpio_reset_pin((gpio_num_t)${uart_rx_pin});
+         gpio_reset_pin((gpio_num_t)${uart_tx_pin});
  platformio_options:
     board_build.flash_mode: dio
 
