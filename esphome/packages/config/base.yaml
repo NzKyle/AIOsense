@@ -10,7 +10,8 @@ esphome:
     version: "${version}"
 
 logger:
-  baud_rate: 0  # disable logging via UART
+  level: VERBOSE
+  #baud_rate: 0  # disable logging via UART
 
 captive_portal:
 
