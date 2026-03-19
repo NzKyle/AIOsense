@@ -20,14 +20,18 @@ external_components:
 #    components: [i2c]
 
 esphome:
+  platformio_options:
+    board_build.extra_flags:
+      - "-DARDUINO_USB_CDC_ON_BOOT=0"
 # on_boot:
 #  - priority: 1001
 #    then:
 #      - lambda: |-
 #         gpio_reset_pin((gpio_num_t)20);
 #         gpio_reset_pin((gpio_num_t)21);
- platformio_options:
-    board_build.flash_mode: dio
+# platformio_options:
+#    board_build.flash_mode: dio
+
 
 esp32:
   board: lolin_c3_mini
