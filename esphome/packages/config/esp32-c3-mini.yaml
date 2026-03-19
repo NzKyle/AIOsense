@@ -19,15 +19,16 @@ external_components:
 #  - source: github://esphome/esphome@2025.8.1
 #    components: [i2c]
 
+
 esphome:
-  platformio_options:
-    board_build.flash_mode: dio
 # on_boot:
 #  - priority: 1001
 #    then:
 #      - lambda: |-
 #         gpio_reset_pin((gpio_num_t)20);
 #         gpio_reset_pin((gpio_num_t)21);
+ platformio_options:
+    board_build.flash_mode: dio
 
 
 
