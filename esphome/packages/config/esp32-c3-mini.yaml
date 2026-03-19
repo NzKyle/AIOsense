@@ -21,16 +21,14 @@ external_components:
 
 esphome:
   platformio_options:
-    board_build.extra_flags:
-      - "-DARDUINO_USB_CDC_ON_BOOT=0"
+    board_build.flash_mode: dio
 # on_boot:
 #  - priority: 1001
 #    then:
 #      - lambda: |-
 #         gpio_reset_pin((gpio_num_t)20);
 #         gpio_reset_pin((gpio_num_t)21);
-# platformio_options:
-#    board_build.flash_mode: dio
+
 
 
 esp32:
